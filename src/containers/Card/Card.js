@@ -26,6 +26,8 @@ class Card extends Component {
                     />
 
                     <CardBack
+                        bio="Developer for 8 years+ with experience in front and back-end. Likes front-end and frameworks such as Angular or React. Loves burgers."
+                        highlights= {["Front-end", "REACT", "Angular" ]}
                     />
                 </div>
             </div>

@@ -21,8 +21,20 @@
     .rightCol {
         flex: 1 0 40%;
     }
+
+    ul.Highlight {
+        list-style-type: none;
+        text-align: left;
+
+        li {
+            &::marker {
+                content: "🍔";
+            }
+            &::before {
+                content: "";
+                padding-left: 0.5rem;
+            }
+        }
+    }
 }
 
-.flipped {
-    
-}

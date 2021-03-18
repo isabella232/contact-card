@@ -7,13 +7,17 @@ const cardBack = (props) => {
     return (
     <div className={cardClasses}>
         <div className={classes.leftCol}>
-            Developer for 8 years+ with experience in front and back-end. Specialize in front-end and frameworks such as Angular or React. Loves burgers.
+            {props.bio}
         </div>
+
+
         <div className={classes.rightCol}>
-            <ul className="highlights">
-                <li> Front-end </li>
-                <li> REACT </li>
-                <li> Angular </li>
+            <ul className={classes.Highlight}>
+                {props.highlights.map(highlight => {
+                    return (
+                        <li> {highlight} </li>
+                    )               
+                })}
             </ul>
         </div>
     </div>
