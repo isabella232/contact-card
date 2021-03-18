@@ -1,9 +1,9 @@
 import classes from './CardFront.module.scss'
 const cardFront = (props) => {
-    let cardClasses = [ classes.Card, classes.CardFront, props.flipped ? classes.show : ""].join(" ");
+    let cardClasses = [ classes.Card, classes.CardFront ].join(" ");
 
     return (
-    <div className={cardClasses} onClick={props.click}>           
+    <div className={cardClasses}>           
         <img alt='profilepic' width='100px' height='auto' src={props.picture}/>
         <p>{props.name}</p>
         <p>{props.title}</p>
